@@ -85,7 +85,7 @@ export default function Signin() {
                     </div> : ''}
 
                     <button disabled={!(login.isValid && login.dirty)} type='submit' className='btn bg-main text-white'>{loading?'Signin':<i className='fa fa-spinner fa-spin'></i>}</button>
-                   <Link to={'/Forgot'}> <h4>Forgot Password?</h4></Link>
+                   <Link to={'/Forgot'}> <h6 className='mt-2'>Forgot Password?</h6></Link>
                 </form>
             </div>
         </div>
