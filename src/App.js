@@ -26,7 +26,7 @@ export default function App() {
   const routes = createHashRouter([
     {
       path: '/', element: <MainLayout />, children: [
-        { index: true, element: <ProtectedRoutes><Home /></ProtectedRoutes> },
+        
         { path: 'Home', element: <ProtectedRoutes><Home /></ProtectedRoutes> },
         { path: 'products', element: <ProtectedRoutes><Products /></ProtectedRoutes> },
         { path: 'cart', element: <ProtectedRoutes><Cart /></ProtectedRoutes> },
@@ -41,7 +41,7 @@ export default function App() {
     },
     {
       path: '/', element: <AuthLayout />, children: [
-
+        { index: true, element: <Signin /> },
         { path: 'signup', element: <Signup /> },
         { path: 'signin', element: <Signin /> },
 
